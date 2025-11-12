@@ -8,3 +8,4 @@ if troco < 0:
     print('valor insuficiente para pagar a compra')
 else:
     troco_real = troco
+    print(f'o troco foi de {troco_real} reais')
