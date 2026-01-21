@@ -12,10 +12,14 @@ for n in range(num_alunos):
     
     dicionario_notas[nome_aluno] = nota_aluno
 
-for nome, nota in dicionario_notas.items():
-    print(f'{nome}: {nota}')
+# for nome, nota in dicionario_notas.items():
+#     print(f'{nome}: {nota}')
 
 print(dicionario_notas)
+
+for elemento in dicionario_notas:
+    valor = dicionario_notas[elemento]
+    print(valor)
 
 
 # ex2:
@@ -112,7 +116,12 @@ def calcular_media(dicionario):
 
         media = somatorio/4
 
-        dicionario_media[elemento] = media
+        # dicionario_media[elemento] = media
+
+        if media >= 6:
+            dicionario_media[elemento] = 'aprovado'
+        else:
+            dicionario_media[elemento] = 'reprovado'
         
     return dicionario_media
 
